@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: 'Cormorant Garamond', serif;
   color: #162E32;
+  transition: all .6s ease-in;
 }
 
 body {
@@ -135,12 +136,6 @@ body {
   z-index: 100;
 }
 
-.mainContainer {
-  width: 100%;
-  min-height: 100vh;
-
-}
-
 .portfolioContainer {
   max-width: 1400px;
   min-height: 100vh;
@@ -162,11 +157,11 @@ header.title h1{
   font-weight: 600;
 }
 
-section.btns {
+.controls {
   padding: 20px 0px 25px;
 }
 
-section.btns ul {
+ul.controls {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -174,7 +169,7 @@ section.btns ul {
   list-style: none;
 }
 
-section.btns ul li{
+ul.controls li.buttons {
   display: inline-block;
   padding: 3px 0px;
   font-size: 20px;
@@ -186,16 +181,16 @@ section.btns ul li{
   transition: color 0.4s;
 }
 
-section.btns ul li:hover {
+ul.controls li.buttons:hover {
   color: #2D74A0;
 }
 
-section.btns ul li.active {
+ul.controls li.buttons.active {
   position: relative;
   color: #2D74A0;
 }
 
-section.btns ul li.active::after {
+ul.controls li.buttons.active::after {
   content: '';
   position: absolute;
   top: 110%;
@@ -215,58 +210,46 @@ section.btns ul li.active::after {
   }
 }
 
-section.gallery {
-  width: 100%;
-  min-height: 100vh;
+.image-container {
   display: grid;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-}
+  margin: 10px;
 
-section.gallery .card {
-  position: relative;
-  max-width: 100%;
+  }
+
+.image {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: #AEB6A9;
+
+  }
+
+img {
   height: 100%;
-  cursor: pointer;
-  background-color: #AEB6A9;
-}
-
-section.gallery .card.hide{
-  display: none;
-}
-
-section.gallery .card.active{
-  display: block;
-}
-
-.card .imgBox {
-  position: relative;
   width: 100%;
-  height: 100%;
-}
-
-.card .imgBox img {
-  width: 100%;
-  height: 100%;
   object-fit: cover;
   display: block;
   transition: opacity 0.4s;
 }
 
-.card:hover .imgBox img {
+.image:hover img {
   opacity: 0.58;
   cursor: pointer;
 }
 
 @media(max-width: 720px){
-  section.gallery{
-    grid-template-columns: repeat(4, 2fr);
+  .gallery{
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media(max-width: 480px){
-  section.gallery{
-    grid-template-columns: repeat(3, 1fr);
+  .gallery {
+    grid-template-columns: repeat(1, 1fr);
   }
   header.title{
     padding: 0px 0px 10px 0px;

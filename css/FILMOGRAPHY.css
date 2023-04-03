@@ -133,7 +133,7 @@ body {
   max-width: 1400px;
   min-height: 100vh;
   margin: 0px auto;
-  padding: 30px 8%;
+  padding: 0px 8%;
 }
 
 header.title {
@@ -150,12 +150,13 @@ header.title h1{
   font-weight: 600;
 }
 
+
 .container {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 10px;
   align-items: flex-start;
-  padding: 0px 5%;
+  padding: -50px 5%;
 }
 
 .container .main-video {
