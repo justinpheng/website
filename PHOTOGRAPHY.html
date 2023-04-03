@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" charset="utf-8"></script>
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="./css/lightbox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
   </head>
   <body>
     <div id="preloader"></div>
@@ -295,6 +295,9 @@
     </div>
   </div>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
 <script>
   $(document).ready(function(){
     $('.buttons').click(function(){
@@ -305,6 +308,13 @@
       }else{
         $('.image').not('.'+filter).hide(200);
         $('.image').filter('.'+filter).show(400);
+      }
+    });
+    $('.gallery').magnificPopup({
+      delegate: 'a',
+      type:'image',
+      gallery:{
+        enabled:true
       }
     });
   });
