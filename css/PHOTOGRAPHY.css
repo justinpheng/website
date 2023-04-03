@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: 'Cormorant Garamond', serif;
   color: #162E32;
+  transition: all .6s ease-in;
 }
 
 body {
@@ -223,6 +224,8 @@ ul.controls li.buttons.active::after {
     height: 100%;
     width: 100%;
     overflow: hidden;
+    background-color: #AEB6A9;
+
   }
 
 img {
@@ -230,7 +233,6 @@ img {
   width: 100%;
   object-fit: cover;
   display: block;
-  background-color: #AEB6A9;
   transition: opacity 0.4s;
 }
 
