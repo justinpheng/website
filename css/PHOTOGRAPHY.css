@@ -224,8 +224,6 @@ ul.controls li.buttons.active::after {
     height: 100%;
     width: 100%;
     overflow: hidden;
-    background-color: #AEB6A9;
-
   }
 
 img {
@@ -239,6 +237,7 @@ img {
 .image:hover img {
   opacity: 0.58;
   cursor: pointer;
+  background-color: #AEB6A9;
 }
 
 @media(max-width: 720px){
