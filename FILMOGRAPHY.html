@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FILMOGRAPHY</title>
+    <link rel="stylesheet" href="css/FILMOGRAPHY.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" charset="utf-8"></script>
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+  </head>
+  <body>
+    <div id="preloader"></div>
+    <div class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
+    <div class="side-bar">
+      <a href="#"><div class="close-btn">
+        <i class="fas fa-times"></i>
+      </div></a>
+      <div class="menu">
+      <div class="logo"><a href="index.html">JUSTIN PHENG</a></div>
+      <div class="subscript">Filmmaker &#x2022; Editor &#x2022; Photographer</div>
+    </div>
+      <div class="menu">
+        <div class="item"><a href="ABOUT.html">ABOUT</a></div>
+        <div class="item">
+          <a href="#" class="sub-btn">COLLECTIONS</a>
+            <div class="sub-menu">
+              <a href="FILMOGRAPHY.html" class="sub-item">FILMOGRAPHY</a>
+              <a href="PHOTOGRAPHY.html" class="sub-item">ANALOG PHOTOGRAPHY</a>
+            </div>
+        </div>
+        <div class="item"><a href="CONTACT.html">CONTACT</a></div>
+      </div>
+    </div>
+    <script>
+      var loader = document.getElementById("preloader");
+      window.addEventListener("load", function(){
+        loader.style.display = "none";
+      })
+    </script>
+   <script type="text/javascript">
+      $(document).ready(function(){
+        $('.sub-btn').click(function(){
+          $(this).next('.sub-menu').slideToggle();
+        });
+        $('.menu-btn').click(function(){
+          $('.side-bar').addClass('active');
+          $('.menu-btn').css("visibility", "hidden");
+        });
+        $('.close-btn').click(function(){
+          $('.side-bar').removeClass('active');
+          $('.menu-btn').css("visibility", "visible");
+        });
+      });
+    </script>
+      
+      <header class="title">
+        <h1>FILMOGRAPHY</h1>
+      </header>
+      
+      <div class="container">
+
+      <div class="main-video">
+        <div class="video">
+          <video src="./vid-1.mp4" controls ="autoplay"></video>
+          <h3 class="title">Sessions of Sweet Silent Thought - 16mm Student Short Film</h3>
+        </div>
+      </div>
+
+    <div class="video-list">
+
+      <div class="vid">
+        <video src="./vid-1.mp4"></video>
+        <h3 class="title">Sessions of Sweet Silent Thought - 16mm Student Short Film</h3>
+      </div>
+
+      <div class="vid">
+        <video src="./vid-2.mp4"></video>
+        <h3 class="title">Open Doors (Unfinished)</h3>
+      </div>
+
+      <div class="vid">
+        <video src="./vid-3.mp4"></video>
+        <h3 class="title">Ninja Cuts Barbershop Advert</h3>
+      </div>
+
+      <div class="vid">
+        <video src="./vid-4.mp4"></video>
+        <h3 class="title">Sublime Mood Piece</h3>
+      </div>
+
+      <div class="vid">
+        <video src="./vid-5.mp4"></video>
+        <h3 class="title">Personal Brand Video</h3>
+      </div>
+
+    </div>
+
+    </div>
+    <script>
+
+      let listVideo = document.querySelectorAll('.video-list .vid');
+      let mainVideo = document.querySelector('.main-video video');
+      let title = document.querySelector('.main-video .title');
+
+      listVideo.forEach(video =>{
+        video.onclick = () =>{
+          listVideo.forEach(vid => vid.classList.remove('active'));
+          video.classList.add('active');
+          if(video.classList.contains('active')){
+            let src = video.children[0].getAttribute('src');
+            mainVideo.src = src;
+            let text = video.children[1].innerHTML;
+            title.innerHTML = text;
+          };
+        };
+      });
+    </script>
+  </body>
+</html>

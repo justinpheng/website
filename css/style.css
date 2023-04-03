@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Cormorant Garamond', serif;
+  color: #ECEFE8;
+}
+
+body {
+  min-height: 100vh;
+  background: #021114 url("../images/selfie.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Cormorant Garamond', serif;
+  color: #ECEFE8;
+}
+
+
+.side-bar {
+  background: #000508;
+  width: 245px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  overflow-y: auto;
+  transition: 0.35s ease;
+  transition-property: left;
+}
+
+.side-bar.active{
+  left: 0;
+}
+
+.side-bar .menu {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.side-bar .menu .item {
+  position: relative;
+  cursor: pointer;
+}
+
+.side-bar .menu .item a{
+  color: #ECEFE8;
+  font-size: 16px;
+  text-decoration: none;
+  display: block;
+  padding: 5px 30px;
+  line-height: 40px;
+}
+
+.side-bar .menu .item a:hover {
+  color: #AEB6A9;
+  background-color: #162E32;
+  transition: all 0.35s ease;
+}
+
+.side-bar .menu .item i{
+  margin-right: 15px;
+}
+
+.side-bar .menu .item .sub-menu {
+  background: #314745;
+  display: none;
+}
+
+.side-bar .menu .item .sub-menu a {
+  padding-left: 40px;
+  font-size: 14px;
+}
+
+.side-bar .menu .item .sub-menu a:hover{
+  background: #698684;
+  color: #FFEBB3;
+  transition: all 0.35s ease;
+}
+
+.logo {
+  position: relative;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.logo a{
+  color: #ECEFE8;
+  font-size: 22px;
+  text-decoration: none;
+  display: block;
+  line-height: 0;
+  padding: 22px 30px;
+}
+
+.logo a:hover{
+  color: #AEB6A9;
+}
+
+.close-btn {
+  position: absolute;
+  color: #ECEFE8;
+  font-size: 18px;
+  right: 0;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.close-btn a:hover{
+  color: #927A6E;
+}
+
+.menu-btn {
+  position: absolute;
+  color: #ECEFE8;
+  font-size: 24px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.subscript {
+  padding: 0px 30px;
+  font-style: italic;
+}
+
+#preloader {
+  background: #021114 url("../images/loader.gif") no-repeat center;
+  background-size: 8%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}

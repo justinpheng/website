@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ANALOG PHOTOGRAPHY</title>
+    <link rel="stylesheet" href="css/PHOTOGRAPHY.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" charset="utf-8"></script>
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/lightbox.css">
+  </head>
+  <body>
+    <div id="preloader"></div>
+    <div class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
+    <div class="side-bar">
+      <a href="#"><div class="close-btn">
+        <i class="fas fa-times"></i>
+      </div></a>
+      <div class="menu">
+      <div class="logo"><a href="index.html">JUSTIN PHENG</a></div>
+      <div class="subscript">Filmmaker &#x2022; Editor &#x2022; Photographer</div>
+    </div>
+      <div class="menu">
+        <div class="item"><a href="ABOUT.html">ABOUT</a></div>
+        <div class="item">
+          <a href="#" class="sub-btn">COLLECTIONS</a>
+            <div class="sub-menu">
+              <a href="FILMOGRAPHY.html" class="sub-item">FILMOGRAPHY</a>
+              <a href="PHOTOGRAPHY.html" class="sub-item">ANALOG PHOTOGRAPHY</a>
+            </div>
+        </div>
+        <div class="item"><a href="CONTACT.html">CONTACT</a></div>
+      </div>
+    </div>
+    <script>
+      var loader = document.getElementById("preloader");
+      window.addEventListener("load", function(){
+        loader.style.display = "none";
+      })
+    </script>
+   <script type="text/javascript">
+      $(document).ready(function(){
+        $('.sub-btn').click(function(){
+          $(this).next('.sub-menu').slideToggle();
+        });
+        $('.menu-btn').click(function(){
+          $('.side-bar').addClass('active');
+          $('.menu-btn').css("visibility", "hidden");
+        });
+        $('.close-btn').click(function(){
+          $('.side-bar').removeClass('active');
+          $('.menu-btn').css("visibility", "visible");
+        });
+      });
+    </script>
+
+    <div class="portfolioContainer">
+      <header class="title">
+        <h1>ANALOG PHOTO COLLECTION</h1>
+      </header>
+      <main class="mainContainer">
+        <section class="btns">
+          <ul>
+            <li class="btn active" data-filter="all">All Photos</li>
+            <li class="btn" data-filter="Studio">Studio Portraitures</li>
+            <li class="btn" data-filter="Commissioned">Commissioned Shoots</li>
+            <li class="btn" data-filter="Miscellaneous">Miscellaneous</li>
+          </ul>
+        </section>
+        <section class="gallery">
+
+          <a href="./images/photography/Studio1.jpg" data-lightbox="slide">
+          <div class="card" data-item="Studio">
+            <div class="imgBox">
+              <img src="./images/Photography/Studio1.jpg">
+            </div>
+          </div>
+        </a>
+
+        <a href="./images/Photography/Studio2.jpg" data-lightbox="slide">
+          <div class="card" data-item="Studio">
+            <div class="imgBox">
+              <img src="./images/photography/Studio2.jpg">
+            </div>
+          </div>
+        </a>
+
+        <a href="./images/Photography/Studio3.jpg" data-lightbox="slide">
+          <div class="card" data-item="Studio">
+            <div class="imgBox">
+              <img src="./images/photography/Studio3.jpg">
+            </div>
+          </div>
+        </a>
+
+        <a href="./images/photography/Studio4.jpg" data-lightbox="slide">
+          <div class="card" data-item="Studio">
+            <div class="imgBox">
+              <img src="./images/photography/Studio4.jpg">
+            </div>
+          </div>
+        </a>
+
+        <a href="./images/photography/Studio5.jpg" data-lightbox="slide">
+          <div class="card" data-item="Studio">
+            <div class="imgBox">
+              <img src="./images/photography/Studio5.jpg">
+            </div>
+          </div>
+        </a>
+
+        <a href="./images/photography/Studio6.jpg" data-lightbox="slide">
+          <div class="card" data-item="Studio">
+            <div class="imgBox">
+              <img src="./images/photography/Studio6.jpg">
+            </div>
+          </div>
+        </a>
+
+        <a href="./images/photography/Studio7.jpg" data-lightbox="slide">
+          <div class="card" data-item="Studio">
+            <div class="imgBox">
+              <img src="./images/photography/Studio7.jpg">
+            </div>
+          </div>
+        </a>
+
+        <a href="./images/photography/Studio8.jpg" data-lightbox="slide">
+          <div class="card" data-item="Studio">
+            <div class="imgBox">
+              <img src="./images/photography/Studio8.jpg">
+            </div>
+          </div>
+        </a>
+
+        <a href="./images/photography/Studio9.jpg" data-lightbox="slide">
+          <div class="card" data-item="Studio">
+            <div class="imgBox">
+              <img src="./images/photography/Studio9.jpg">
+            </div>
+          </div>
+        </a>
+
+        <a href="./images/photography/Studio10.jpg" data-lightbox="slide">
+          <div class="card" data-item="Studio">
+            <div class="imgBox">
+              <img src="./images/photography/Studio10.jpg">
+            </div>
+          </div>
+        </a>
+
+        <a href="./images/photography/Studio11.jpg" data-lightbox="slide">
+          <div class="card" data-item="Studio">
+            <div class="imgBox">
+              <img src="./images/photography/Studio11.jpg">
+            </div>
+          </div>
+        </a>
+
+        <a href="./images/photography/Studio12.jpg" data-lightbox="slide">
+          <div class="card" data-item="Studio">
+            <div class="imgBox">
+              <img src="./images/photography/Studio12.jpg">
+            </div>
+          </div>
+        </a>
+
+        <a href="./images/photography/Studio13.jpg" data-lightbox="slide">
+          <div class="card" data-item="Studio">
+            <div class="imgBox">
+              <img src="./images/photography/Studio13.jpg">
+            </div>
+          </div>
+        </a>
+
+        <a href="./images/photography/Studio14.jpg" data-lightbox="slide">
+          <div class="card" data-item="Studio">
+            <div class="imgBox">
+              <img src="./images/photography/Studio14.jpg">
+            </div>
+          </div>
+        </a>
+
+        <a href="./images/photography/Studio15.jpg" data-lightbox="slide">
+          <div class="card" data-item="Studio">
+            <div class="imgBox">
+              <img src="./images/photography/Studio15.jpg">
+            </div>
+          </div>
+        </a>
+
+        <a href="./images/photography/Studio16.jpg" data-lightbox="slide">
+          <div class="card" data-item="Studio">
+            <div class="imgBox">
+              <img src="./images/photography/Studio16.jpg">
+            </div>
+          </div>
+        </a>
+
+        <a href="./images/photography/Studio17.jpg" data-lightbox="slide">
+          <div class="card" data-item="Studio">
+            <div class="imgBox">
+              <img src="./images/photography/Studio17.jpg">
+            </div>
+          </div>
+        </a>
+
+        <a href="./images/photography/Studio18.jpg" data-lightbox="slide">
+          <div class="card" data-item="Studio">
+            <div class="imgBox">
+              <img src="./images/photography/Studio18.jpg">
+            </div>
+          </div>
+        </a>
+
+        <a href="./images/photography/Studio19.jpg" data-lightbox="slide">
+          <div class="card" data-item="Studio">
+            <div class="imgBox">
+              <img src="./images/photography/Studio19.jpg">
+            </div>
+          </div>
+        </a>
+
+        <a href="./images/photography/Studio20.jpg" data-lightbox="slide">
+          <div class="card" data-item="Studio">
+            <div class="imgBox">
+              <img src="./images/photography/Studio20.jpg">
+            </div>
+          </div>
+        </a>
+
+        <a href="./images/photography/Studio21.jpg" data-lightbox="slide">
+          <div class="card" data-item="Studio">
+            <div class="imgBox">
+              <img src="./images/photography/Studio21.jpg">
+            </div>
+          </div>
+        </a>
+
+        <a href="./images/photography/Studio22.jpg" data-lightbox="slide">
+          <div class="card" data-item="Studio">
+            <div class="imgBox">
+              <img src="./images/photography/Studio22.jpg">
+            </div>
+          </div>
+        </a>
+
+        <a href="./images/photography/Studio23.jpg" data-lightbox="slide">
+          <div class="card" data-item="Studio">
+            <div class="imgBox">
+              <img src="./images/photography/Studio23.jpg">
+            </div>
+          </div>
+        </a>
+
+        <a href="./images/photography/Studio24.jpg" data-lightbox="slide">
+          <div class="card" data-item="Studio">
+            <div class="imgBox">
+              <img src="./images/photography/Studio24.jpg">
+            </div>
+          </div>
+        </a>
+
+
+        <a href="./images/photography/Commissioned1.jpg" data-lightbox="slide">
+          <div class="card" data-item="Commissioned">
+            <div class="imgBox">
+              <img src="./images/photography/Commissioned1.jpg">
+            </div>
+          </div>
+        </a>
+
+        <a href="./images/photography/Commissioned2.jpg" data-lightbox="slide">
+          <div class="card" data-item="Commissioned">
+            <div class="imgBox">
+              <img src="./images/photography/Commissioned2.jpg">
+            </div>
+          </div>
+        </a>
+
+        <a href="./images/photography/Commissioned3.jpg" data-lightbox="slide">
+          <div class="card" data-item="Commissioned">
+            <div class="imgBox">
+              <img src="./images/photography/Commissioned3.jpg">
+            </div>
+          </div>
+        </a>
+
+        <a href="./images/photography/Commissioned4.jpg" data-lightbox="slide">
+          <div class="card" data-item="Commissioned">
+            <div class="imgBox">
+              <img src="./images/photography/Commissioned4.jpg">
+            </div>
+          </div>
+        </a>
+
+        <a href="./images/photography/Commissioned5.jpg" data-lightbox="slide">
+          <div class="card" data-item="Commissioned">
+            <div class="imgBox">
+              <img src="./images/Photography/Commissioned5.jpg">
+            </div>
+          </div>
+        </a>
+
+        <a href="./images/photography/Commissioned6.jpg" data-lightbox="slide">
+          <div class="card" data-item="Commissioned">
+            <div class="imgBox">
+              <img src="./images/Photography/Commissioned6.jpg">
+            </div>
+          </div>
+        </a>
+
+        <a href="./images/photography/Commissioned7.jpg" data-lightbox="slide">
+          <div class="card" data-item="Commissioned">
+            <div class="imgBox">
+              <img src="./images/Photography/Commissioned7.jpg">
+            </div>
+          </div>
+        </a>
+
+        <a href="./images/photography/Commissioned8.jpg" data-lightbox="slide">
+          <div class="card" data-item="Commissioned">
+            <div class="imgBox">
+              <img src="./images/Photography/Commissioned8.jpg">
+            </div>
+          </div>
+        </a>
+
+        <a href="./images/photography/Commissioned9.jpg" data-lightbox="slide">
+          <div class="card" data-item="Commissioned">
+            <div class="imgBox">
+              <img src="./images/Photography/Commissioned9.jpg">
+            </div>
+          </div>
+        </a>
+
+        <a href="./images/photography/Commissioned10.jpg" data-lightbox="slide">
+          <div class="card" data-item="Commissioned">
+            <div class="imgBox">
+              <img src="./images/Photography/Commissioned10.jpg">
+            </div>
+          </div>
+        </a>
+
+        <a href="./images/photography/Miscellaneous1.jpg" data-lightbox="slide">
+          <div class="card" data-item="Miscellaneous">
+            <div class="imgBox">
+              <img src="./images/Photography/Miscellaneous1.jpg">
+            </div>
+          </div>
+        </a>
+
+        <a href="./images/photography/Miscellaneous2.jpg" data-lightbox="slide">
+          <div class="card" data-item="Miscellaneous">
+            <div class="imgBox">
+              <img src="./images/Photography/Miscellaneous2.jpg">
+            </div>
+          </div>
+        </a>
+
+        <a href="./images/photography/Miscellaneous3.jpg" data-lightbox="slide">
+          <div class="card" data-item="Miscellaneous">
+            <div class="imgBox">
+              <img src="./images/Photography/Miscellaneous3.jpg">
+            </div>
+          </div>
+        </a>
+
+        <a href="./images/photography/Miscellaneous4.jpg" data-lightbox="slide">
+          <div class="card" data-item="Miscellaneous">
+            <div class="imgBox">
+              <img src="./images/Photography/Miscellaneous4.jpg">
+            </div>
+          </div>
+        </a>
+
+        <a href="./images/photography/Miscellaneous5.jpg" data-lightbox="slide">
+          <div class="card" data-item="Miscellaneous">
+            <div class="imgBox">
+              <img src="./images/Photography/Miscellaneous5.jpg">
+            </div>
+          </div>
+        </a>
+
+        <a href="./images/photography/Miscellaneous6.jpg" data-lightbox="slide">
+          <div class="card" data-item="Miscellaneous">
+            <div class="imgBox">
+              <img src="./images/Photography/Miscellaneous6.jpg">
+            </div>
+          </div>
+        </a>
+
+        <a href="./images/photography/Miscellaneous7.jpg" data-lightbox="slide">
+          <div class="card" data-item="Miscellaneous">
+            <div class="imgBox">
+              <img src="./images/Photography/Miscellaneous7.jpg">
+            </div>
+          </div>
+        </a>
+
+        <a href="./images/photography/Miscellaneous8.jpg" data-lightbox="slide">
+          <div class="card" data-item="Miscellaneous">
+            <div class="imgBox">
+              <img src="./images/Photography/Miscellaneous8.jpg">
+            </div>
+          </div>
+        </a>
+
+        <a href="./images/photography/Miscellaneous9.jpg" data-lightbox="slide">
+          <div class="card" data-item="Miscellaneous">
+            <div class="imgBox">
+              <img src="./images/Photography/Miscellaneous9.jpg">
+            </div>
+          </div>
+        </a>
+
+        <a href="./images/photography/Miscellaneous10.jpg" data-lightbox="slide">
+          <div class="card" data-item="Miscellaneous">
+            <div class="imgBox">
+              <img src="./images/Photography/Miscellaneous10.jpg">
+            </div>
+          </div>
+        </a>
+
+        <a href="./images/photography/Miscellaneous11.jpg" data-lightbox="slide">
+          <div class="card" data-item="Miscellaneous">
+            <div class="imgBox">
+              <img src="./images/Photography/Miscellaneous11.jpg">
+            </div>
+          </div>
+        </a>
+
+        <a href="./images/photography/Miscellaneous12.jpg" data-lightbox="slide">
+          <div class="card" data-item="Miscellaneous">
+            <div class="imgBox">
+              <img src="./images/Photography/Miscellaneous12.jpg">
+            </div>
+          </div>
+        </a>
+
+        <a href="./images/photography/Miscellaneous13.jpg" data-lightbox="slide">
+          <div class="card" data-item="Miscellaneous">
+            <div class="imgBox">
+              <img src="./images/Photography/Miscellaneous13.jpg">
+            </div>
+          </div>
+        </a>
+
+          <a href="./images/photography/Miscellaneous14.jpg" data-lightbox="slide">
+            <div class="card" data-item="Miscellaneous">
+              <div class="imgBox">
+                <img src="./images/Photography/Miscellaneous14.jpg">
+              </div>
+            </div>
+          </a>
+
+          <a href="./images/photography/Miscellaneous15.jpg" data-lightbox="slide">
+            <div class="card" data-item="Miscellaneous">
+              <div class="imgBox">
+                <img src="./images/Photography/Miscellaneous15.jpg">
+              </div>
+            </div>
+          </a>
+
+          <a href="./images/photography/Miscellaneous16.jpg" data-lightbox="slide">
+            <div class="card" data-item="Miscellaneous">
+              <div class="imgBox">
+                <img src="./images/Photography/Miscellaneous16.jpg">
+              </div>
+            </div>
+          </a>
+          
+        </section>
+      </main>
+    </div>
+    <script type="text/javascript" src="./js/script.js"></script>
+    <script src="./js/lightbox-plus-jquery.js"></script>
+  </body>
+</html>
