@@ -1,4 +1,4 @@
-var allFilters = document.querySelectorAll('section.btns li.btn');
+var allFilters = document.querySelectorAll('ul.controls li.buttons');
 var allCards = document.querySelectorAll('section.gallery div.card');
 
 for(var i = 0; i < allFilters.length; i++){
@@ -6,7 +6,7 @@ for(var i = 0; i < allFilters.length; i++){
 }
 
 function myFunction(){
-  var currentTab = document.querySelector('section.btns .active');
+  var currentTab = document.querySelector('ul.controls .active');
   currentTab.classList.remove('active');
   this.classList.add('active');
 
