@@ -156,7 +156,7 @@ header.title h1{
   grid-template-columns: 2fr 1fr;
   gap: 10px;
   align-items: flex-start;
-  padding: -50px 5%;
+  padding: 0px 5%;
 }
 
 .container .main-video {
