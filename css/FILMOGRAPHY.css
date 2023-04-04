@@ -130,8 +130,8 @@ body {
 }
 
 .portfolioContainer {
-  max-width: 1400px;
-  height: 100%;
+  max-width: 100%;
+  min-height: 100vw;
   margin: 0px auto;
   padding: 0px 8%;
 }
@@ -157,6 +157,7 @@ header.title h1{
   gap: 10px;
   align-items: flex-start;
   padding: 0px 5%;
+  position: absolute;
 }
 
 .container .main-video {
