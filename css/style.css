@@ -151,7 +151,6 @@ section{
 section .content{
   max-width: 650px;
   margin: 60px 10%;
-  position: absolute; top: 50px;
 }
 
 section .content h2 {
@@ -205,8 +204,6 @@ section .icons{
   margin-right: auto;
   margin-bottom: 0;
   margin-left: auto;
-  position: relative; top: 370px;
-
 }
 
 section .icons a{
